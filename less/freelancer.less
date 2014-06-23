@@ -1,6 +1,8 @@
 @import "variables.less";
 @import "mixins.less";
 
+/* Structure & Styles */
+
 body {
 	overflow-x: hidden;
 }
@@ -40,7 +42,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f0e7";
     font-family: 'FontAwesome';
     display: inline-block;
     position: relative; 
@@ -50,12 +52,12 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: white;
+    border-color: #fff;
 }
 
 hr.star-light:after {
     background-color: @brand-success;
-    color: white;
+    color: #fff;
 }
 
 hr.star-primary {
@@ -150,7 +152,16 @@ header {
 			}
 		}
 	}
+	&.navbar-default { 
+		background: @navbar;
+	}
+
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background: #333;
+}
+.navbar-default .navbar-nav>li>a:hover { color: #333; }
 
 .navbar-default,
 .navbar-inverse {
@@ -167,7 +178,7 @@ section {
 
 section.success {
 	background: @brand-success;
-	color: white;
+	color: #fff;
 }
 
 @media(max-width:767px) {
@@ -249,6 +260,8 @@ section.success {
 		border: solid 2px white;
 	}
 }
+
+.btn-success { background-color: #333; border: 1px solid #333; }
 
 .floating-label-form-group {
     position: relative;
@@ -362,6 +375,7 @@ footer {
 }
 
 .portfolio-modal {
+	.container { width: 100%; }
 	.modal-content {
 	    border-radius: 0;
 	    background-clip: border-box;
@@ -418,3 +432,9 @@ footer {
         }        
     }
 }
+
+
+/* Carousel */
+
+.carousel .item img { max-height: 600px; }
+
