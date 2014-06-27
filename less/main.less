@@ -1,6 +1,9 @@
 @import "_variables.less";
 @import "_mixins.less";
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,800,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,400italic);
+
 /* Structure & Styles */
 
 body {
@@ -20,14 +23,14 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-	color: @brand-primary;
+	color: @brand-orange;
 	outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 hr.star-light,
@@ -56,17 +59,17 @@ hr.star-light {
 }
 
 hr.star-light:after {
-    // background: @brand-success;
+    // background: @brand-orange;
     color: #fff;
 }
 
 hr.star-primary {
-    border-color: @brand-primary;
+    border-color: @brand-orange;
 }
 
 hr.star-primary:after {
     background-color: #fff;
-    color: @brand-primary;
+    color: @brand-orange;
 }
 
 .img-centered {
@@ -75,8 +78,8 @@ hr.star-primary:after {
 
 header {
 	text-align: center;
-	background: url('../img/Melamine-wood-003.png') repeat fixed;
-	// background: @brand-success;
+	background: @wood-dark fixed;
+	// background: @brand-orange;
 	color: #fff;
 	.container {
 		padding-top: 100px;
@@ -87,16 +90,41 @@ header {
 		margin: 0 auto 20px;
 	}
 	.intro-text {
+		font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		.name {
 			display: block;
-			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			position: relative;
+			z-index: 0;
+			// text-shadow: 0px 1px 1px #4d4d4d;
 			text-transform: uppercase;
 			font-weight: 700;
-			font-size: 2em;
+			font-size: 4em;
+			color: #fff;
+			background: @wood-medium fixed;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			// &:before {
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	z-index: -1;
+			// 	content: "Hi! I'm Avery Wolkin Hadzi";
+			// 	color: #000;
+			// }
+			// &:after {
+			// 	position: absolute;
+			// 	top: 1px;
+			// 	left: 2px;
+			// 	z-index: -2;
+			// 	content: "Hi! I'm Avery Wolkin Hadzi";
+			// 	color: fade(#000, 90%);
+			// }
 		}
 		.skills {
+			color: #e1c7af;
 			font-size: 1.25em;
-			font-weight: 300;
+			font-weight: 400;
 		}
 	}
 }
@@ -139,7 +167,7 @@ header {
 }
 
 .navbar {
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	a:focus {
@@ -155,19 +183,19 @@ header {
 		}
 	}
 	&.navbar-default { 
-		background: @navbar;
-		.navbar-brand:hover { color: @brand-success; }
+		background: transparent;
+		.navbar-brand:hover { color: @brand-orange; }
 	}
-	&.navbar-shrink { background-color: #808080; }
+	&.navbar-shrink { background: @wood-dark; }
 
 }
 
 
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
-	background: #333;
+	background: @gray;
 }
-.navbar-default .navbar-nav>li>a:hover { color: #333; }
+.navbar-default .navbar-nav>li>a:hover { color: @brand-orange; }
 
 .navbar-default,
 .navbar-inverse {
@@ -207,7 +235,7 @@ p.current a {
 }
 
 #portfolio {
-	background-color: @brand-success;
+	background: @halftone;
 	h2 {
 		margin: 0 0 1em 0;
 	}
@@ -217,18 +245,21 @@ p.current a {
         .portfolio-link {
             display: block;
             position: relative;
-            width: 100%;
-            height: auto;
-            .drop-shadow(0, 0, 20px, .1);
+            margin: 1em auto;
+            max-width: 300px;
+            max-height: 300px;
+            background-color: #fff;
+            // .drop-shadow(0, 0, 20px, .1);
+            .drop-shadow(inset 0, 0, 100px, .3);
             -moz-border-radius: 9999px;
             -webkit-border-radius: 9999px;
             border-radius: 9999px;
             overflow: hidden;
 
-            img { max-width: 100%; }
+            img { width: 100%; max-width: 300px; }
 
             .caption {
-                background: fade(@brand-success, 90%);
+                background: fade(#fff, 80%);
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -283,7 +314,7 @@ p.current a {
 	&:focus,
 	&:active,
 	&.active {
-		color: @brand-success;
+		color: @brand-orange;
 		background: white;
 		border: solid 2px white;
 	}
@@ -291,12 +322,12 @@ p.current a {
 
 .btn-success { background-color: #333; border: 1px solid #333; }
 .btn-primary {
-	background-color: @brand-success;
+	background-color: @brand-orange;
 	outline: none;
 	border: none;
 	margin: .5em 0;
 	&:hover {
-		background-color: @brand-success;
+		background-color: @brand-orange;
 	}
 }
 .btn-default {
@@ -361,7 +392,7 @@ p.current a {
 
 .floating-label-form-group-with-focus {
 	label {
-	    color: @brand-success;
+	    color: @brand-orange;
 	}
 }
 
@@ -376,14 +407,14 @@ footer {
 	}
 	.footer-above {
 		padding-top: 50px;
-		background-color: @brand-primary;
+		background-color: @brand-orange;
 	}
 	.footer-col {
 		margin-bottom: 50px;
 	}
 	.footer-below {
 		padding: 25px 0;
-		background-color: darken(@brand-primary, 5%);
+		background-color: darken(@brand-orange, 5%);
 	}
 }
 
@@ -424,16 +455,16 @@ footer {
 }
 
 .portfolio-modal {
-	.container { width: 100%; }
+	.container { width: 100%; padding: 0; }
 	.modal-content {
 	    border-radius: 0;
+	    background: @wood-dark;
 	    background-clip: border-box;
 	    -webkit-box-shadow: none;
 	    box-shadow: none;
 	    border: none;
 	    min-height: 100%;
-	    padding: 100px 0;
-	    text-align: center;
+
 		h2 {
 	    	margin: 0;
 	    	font-size: 3em;
@@ -444,6 +475,12 @@ footer {
 		.item-details {
 			margin: 30px 0;
 		}
+		.col-md-4 { 
+			background: @halftone;
+			padding: 2%;
+			min-height: 100%;
+			text-align: center;
+		}
 	}
     .close-modal {
         position: absolute;
@@ -453,6 +490,7 @@ footer {
         top: 25px;
         right: 25px;
         cursor: pointer;
+        z-index: 99999;
         &:hover {
             opacity: 0.3;
         }
@@ -460,7 +498,7 @@ footer {
             height:75px;
             width:1px;
             margin-left:35px;
-            background-color:@brand-primary;
+            background-color:@brand-orange;
             transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             /* IE 9 */
@@ -470,7 +508,7 @@ footer {
             .rl {
                 height:75px;
                 width:1px;
-                background-color:@brand-primary;
+                background-color:@brand-orange;
                 transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 /* IE 9 */
@@ -485,9 +523,11 @@ footer {
 
 /* Carousel */
 
-.carousel .item img { max-height: 600px; }
+.carousel .item {
+	img { margin: 0 auto; max-width: 200px; }
+}
 .carousel-indicators {
-	bottom: -5%;
+	top: -2em;
 	color: @navbar;
 	border-color: @navbar;
 }
@@ -501,3 +541,19 @@ footer {
 	&.left, &.right { background: none; }
 	&:hover { opacity: 1; color: @navbar; }
 }
+
+
+/* Gallery */
+
+.gallery .item {
+	display: inline-block;
+	margin: .5em;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 10px solid #eee;
+	.drop-shadow();
+	img { margin: 0 auto; height: 100%; }
+}
+

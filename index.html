@@ -17,13 +17,17 @@
 
     <!-- Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 
     <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+
+
 
 </head>
 
@@ -71,7 +75,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="img/profile.png" alt="">
                     <div class="intro-text">
-                        <span class="name">Hi! I'm Avery Wolkin Hadzi.</span>
+                        <div><span class="name">Hi! I'm Avery Wolkin Hadzi.</span></div>
                         <!-- <hr class="star-light"> -->
                         <p class="skills">I am a digital designer with a developer’s heart and a UX soul. I find excitement in straddling the line between design and development, which I believe fuels my fascination of and passion for user experience and UI heuristics.</p>
                     </div>
@@ -90,7 +94,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-udis" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -100,7 +104,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-quaker" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -110,17 +114,17 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-campbells" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/thumbnails/logo-kettle-chips.jpg" class="img-responsive" alt="" />
+                        <img src="img/thumbnails/logo-campbells.png" class="img-responsive" alt="" />
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-microsoft" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -130,7 +134,7 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-rtd" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -140,13 +144,13 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolio-tapinfluence" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/thumbnails/logo-odwalla.jpg" class="img-responsive" alt="" />
+                        <img src="img/thumbnails/logo-TI-tagline.jpg" class="img-responsive" alt="" />
                     </a>
                 </div>
             </div>
@@ -267,7 +271,7 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-udis" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -317,7 +321,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-quaker" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -367,7 +371,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-campbells" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -377,28 +381,57 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
+                    <div class="modal-body">
+                        <div class="col-lg-4">
+                            <h2>Campbell's<sup>&reg;</sup></h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>BlogFrog was one of multiple agencies to contribute to the Address Your Heart campaign/contest. We designed and developed a widget ecosystem that tied into the main microsite. Bloggers embedded our conversation widget and sidebar units, where readers could directly submit an entry for the contest. The contest entries would then appear in the main widget on the microsite, where readers could then vote for all of the entries.</p>
+                            <p>Technologies used: BlogFrog Platform, HTML, CSS, Javascript</p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Client: <strong><a href="http://www.campbellsoupcompany.com/">Campbell's<sup>&reg;</sup> Soup</a></strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
+                                <li>Date: <strong>January 2013</strong>
                                 </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Responsibilities: <strong>Designs, userflow, HTML, CSS, some JavaScript</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                        <div class="col-lg-4 col-lg-push-2">
+                            <div id="carousel-campbells" class="carousel slide carousel-fade">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#carousel-campbells" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="1"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="2"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="3"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="4"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="5"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="6"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="7"></li>
+                                    <li data-target="#carousel-campbells" data-slide-to="8"></li>
+                                  </ol>
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="active item"><img src="img/portfolio/Campbell/campbells-160x400-images.jpg" alt="Sidebar Unit" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-300x250-images.jpg" alt="Sidebar Unit" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-blogwidget_step1.jpg" alt="Blog Widget Step 1" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-blogwidget_step2.jpg" alt="Blog Widget Step 2" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-blogwidget_step3.jpg" alt="Blog Widget Step 3" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-blogwidget_step4.jpg" alt="Blog Widget Step 4" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-blogwidget_step5.jpg" alt="Blog Widget Step 5" /></div>
+                                    <div class="item"><img src="img/portfolio/Campbell/campbells-hub-v5_2.jpg" alt="Microsite Hub" /></div>
+                                  </div>
+
+                                  <a class="carousel-control left" href="#carousel-campbells" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
+                                  <a class="carousel-control right" href="#carousel-campbells" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-microsoft" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -408,28 +441,52 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
+                    <div class="modal-body">
+                        <div class="col-lg-4">
+                            <h2>Microsoft - Nokia Lumia 928</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>To promote the new Nokia Lumia 928, we created an interactive comparison widget that was embedded within blogs. Bloggers took three sets of two photos each; one photo with an iPhone 5, and the other with the Nokia Lumia 928. The comparison widget would display each set of photos side-by-side, and the reader would then choose the photo that s/he thought looked best. The final frame of the widget was dependent upon whether the photo from the Nokia Lumia 928 was chosen 2/3 times or not.</p>
+                            <p>Technologies used: TapInfluence Platform, HTML, CSS, Javascript</p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Client: <strong><a href="http://www.nokia.com/us-en/phones/phone/lumia928/">Microsoft / Windows Phone / Nokia Lumia 928</a></strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
+                                <li>Date: <strong>May 2013</strong>
                                 </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Responsibilities: <strong>Designs, userflow, HTML, CSS, some JavaScript</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                        <div class="col-lg-4 col-lg-push-2">
+                            <div id="carousel-microsoft" class="carousel slide carousel-fade">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#carousel-microsoft" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-microsoft" data-slide-to="1"></li>
+                                    <li data-target="#carousel-microsoft" data-slide-to="2"></li>
+                                    <li data-target="#carousel-microsoft" data-slide-to="3"></li>
+                                    <li data-target="#carousel-microsoft" data-slide-to="4"></li>
+                                    <li data-target="#carousel-microsoft" data-slide-to="5"></li>
+                                  </ol>
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="active item"><img src="img/portfolio/Microsoft/ms-lumia_photo_v3.jpg" alt="Blog Widget Step 1" /></div>
+                                    <div class="item"><img src="img/portfolio/Microsoft/ms-lumia_photo-selected_v3.jpg" alt="Blog Widget Step 1.5" /></div>
+                                    <div class="item"><img src="img/portfolio/Microsoft/ms-lumia_photo-r2_v3.jpg" alt="Blog Widget Step 2" /></div>
+                                    <div class="item"><img src="img/portfolio/Microsoft/ms-lumia_photo-r3_v3.jpg" alt="Blog Widget Step 3" /></div>
+                                    <div class="item"><img src="img/portfolio/Microsoft/ms-lumia_photo-win_v3.jpg" alt="Blog Widget Final Frame 1" /></div>
+                                    <div class="item"><img src="img/portfolio/Microsoft/ms-lumia_photo-lose_v3.jpg" alt="Blog Widget Final Frame 2" /></div>
+                                  </div>
+
+                                  <a class="carousel-control left" href="#carousel-microsoft" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
+                                  <a class="carousel-control right" href="#carousel-microsoft" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-rtd" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -439,28 +496,50 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
+                    <div class="modal-body">
+                        <div class="col-lg-4">
+                            <h2>Regional Transportation District</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>I was fortunate to complete a summer web design internsip with RTD Denver in 2010. My responsibilities included redesigning pages on RTD's website, updating templates, email blast designs, and even a screensaver.</p>
+                            <p>Technologies used: HTML, CSS</p>
                             <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                <li>Client: <strong><a href="http://rtd-denver.com/">Regional Transportation District</a></strong>
                                 </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
+                                <li>Date: <strong>Summer 2010</strong>
                                 </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
+                                <li>Responsibilities: <strong>Photoshop, HTML, CSS</strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                        <div class="col-lg-4 col-lg-push-2">
+                            <div id="carousel-rtd" class="carousel slide carousel-fade">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#carousel-rtd" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-rtd" data-slide-to="1"></li>
+                                    <li data-target="#carousel-rtd" data-slide-to="2"></li>
+                                    <li data-target="#carousel-rtd" data-slide-to="3"></li>
+                                    <li data-target="#carousel-rtd" data-slide-to="4"></li>                                    
+                                  </ol>
+                                  
+                                  <div class="carousel-inner">
+                                    <div class="active item"><img src="img/portfolio/RTD/call-n-ride_map02_2-collapsed.jpg" alt="Call-n-Ride Map - Collapsed" /></div>
+                                    <div class="item"><img src="img/portfolio/RTD/call-n-ride_map02_2-expanded.jpg" alt="Call-n-Ride Map - Collapsed" /></div>
+                                    <div class="item"><img src="img/portfolio/RTD/mobileButtonsHome.jpg" alt="Mobile Buttons" /></div>
+                                    <div class="item"><img src="img/portfolio/RTD/springIntoSummerEmail.jpg" alt="Email Blast Design 1" /></div>
+                                    <div class="item"><img src="img/portfolio/RTD/summerEmail_sand.jpg" alt="Email Blast Design 2" /></div>
+                                  </div>
+
+                                  <a class="carousel-control left" href="#carousel-rtd" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
+                                  <a class="carousel-control right" href="#carousel-rtd" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolio-tapinfluence" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -469,24 +548,53 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2014</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                    <h2>TapInfluence Influencer Marketing Platform</h2>
+                    <hr class="star-primary">
+                    <p>As the only UX/UI Designer at TapInfluence, I am responsible for maintaining existing design and affordance patterns across the application. The design was defined by a previous contractor, therefore the majority of my design work for the platform was adapted to that defined style. I have, however, included a couple of concept designs that illustrate the direction I was hoping to take the overall design.</p>
+                    <p>Technologies used: Illustrator, HTML, CSS</p>
+                    <ul class="list-inline item-details">
+                        <li>Client: <strong><a href="http://tapinfluence.com/">TapInfluence Influencer Marketing Platform</a></strong>
+                        </li>
+                        <li>Date: <strong>2013-2014</strong>
+                        </li>
+                        <li>Responsibilities: <strong>Wireframes, designs/interface, user experience, CSS</strong>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+                <div class="col-md-8">
+<!--                    <div id="carousel-tapinfluence" class="carousel slide carousel-fade">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-tapinfluence" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-tapinfluence" data-slide-to="1"></li>
+                        <li data-target="#carousel-tapinfluence" data-slide-to="2"></li>
+                        <li data-target="#carousel-tapinfluence" data-slide-to="3"></li>
+                        <li data-target="#carousel-tapinfluence" data-slide-to="4"></li>                                    
+                      </ol>
+                      
+                      <div class="carousel-inner">
+                        <div class="active item"><a href="img/portfolio/SaaS/TI-Influencers_Assignment_BEFORE.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Influencers_Assignment_BEFORE.jpg" alt="Influencer's Composer - Before" /></a></div>
+                        <div class="item"><a href="img/portfolio/SaaS/TI-Influencers-Assignment_AFTER.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Influencers-Assignment_AFTER.jpg" alt="Influencer's Composer - After" /></a></div>
+                        <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Influencer-Lists_v6.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Influencer-Lists_v6.jpg" alt="Influencer Lists 1" /></a></div>
+                        <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Influencer-Lists-Collapsed_v6.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Influencer-Lists-Collapsed_v6.jpg" alt="Influencer Lists 2" /></a></div>
+                        <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype_2x.jpg" target="_blank"><img class="magniflier" src="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype.jpg" alt="Dashboard Prototype 1" /></a></div>
+                        <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype-2_2x.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype-2.jpg" alt="Dashboard Prototype 2" /></a></div>
+                      </div>
+                    
+                      <a class="carousel-control left" href="#carousel-tapinfluence" data-slide="prev"><i class="fa fa-chevron-circle-left"></i></a>
+                      <a class="carousel-control right" href="#carousel-tapinfluence" data-slide="next"><i class="fa fa-chevron-circle-right"></i></a>
+                </div> -->
+
+                  <div class="gallery">
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype_2x.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype.jpg" alt="Dashboard Prototype 1" /></a></div>
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype-2_2x.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Dashboard-Assignment_prototype-2.jpg" alt="Dashboard Prototype 2" /></a></div>
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Influencers_Assignment_BEFORE.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Influencers_Assignment_BEFORE.jpg" alt="Influencer's Composer - Before" /></a></div>
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Influencers-Assignment_AFTER.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Influencers-Assignment_AFTER.jpg" alt="Influencer's Composer - After" /></a></div>
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Influencer-Lists_v6.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Influencer-Lists_v6.jpg" alt="Influencer Lists 1" /></a></div>
+                    <div class="item"><a href="img/portfolio/SaaS/TI-Marketers_Influencer-Lists-Collapsed_v6.jpg" target="_blank"><img src="img/portfolio/SaaS/TI-Marketers_Influencer-Lists-Collapsed_v6.jpg" alt="Influencer Lists 2" /></a></div>
+                  </div>
+                        
                 </div>
             </div>
         </div>
@@ -499,9 +607,26 @@
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/freelancer.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
     <script>
-        $('.carousel').carousel();
+        // $('.carousel').carousel();
+        $(document).ready(function() {
+            $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox({
+                    beforeShow : function() {
+                    var alt = this.element.find('img').attr('alt');
+                    
+                    this.inner.find('img').attr('alt', alt);
+                    
+                    this.title = alt;
+                }
+            });
+        });
+        
     </script>
+
+
 
 </body>
 
