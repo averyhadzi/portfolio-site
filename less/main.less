@@ -523,39 +523,64 @@ footer {
 /* Carousel */
 
 .carousel .item {
-	img { margin: 0 auto; max-width: 200px; }
+	.carousel-caption { 
+		position: relative; 
+		padding: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin-bottom: 2em;
+		p {
+			color: @gray;
+			text-shadow: none;
+		}
+	}
+	img { margin: 0 auto; }
 }
 .carousel-indicators {
-	top: -2em;
-	color: @navbar;
-	border-color: @navbar;
-}
-.carousel-control {
-	font-family: "FontAwesome";
-	font-size: 4em;
-	color: @navbar;
-	top: 50%;
-	text-shadow: none;
-	.transition;
-	&.left, &.right { background: none; }
-	&:hover { opacity: 1; color: @navbar; }
+	top: -45px;
+	height: 20px;
+	li {
+		color: @gray-lighter;
+		border-color: fade(@gray, 25%);
+		&.active { background-color: @brand-orange; }
+	}
 }
 
+.carousel-control {
+	top: -15px;
+	left: 0;
+	right: 0;
+	font-family: "FontAwesome";
+	font-size: 3em;
+	color: @navbar;
+	text-shadow: none;
+	opacity: 0.2;
+	.transition;
+	&.left, &.right { background: none; }
+	&:hover { opacity: 1; color: @brand-orange; }
+}
+
+.carousel-inner {
+	width: 75%;
+	height: 800px;
+	margin: 0 auto; 
+}
+
+
+.gallery-wrap {
+	padding-top: 3%;
+}
 
 /* Gallery */
 
 .gallery .item {
-	display: inline-block;
 	margin: .5em;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
 	background-color: #fff;
 	border: 10px solid #eee;
-    -moz-border-radius: 9999px;
-    -webkit-border-radius: 9999px;
-    border-radius: 9999px;
 	.drop-shadow();
-	img { margin: 0 auto; height: 100%; }
 }
 
