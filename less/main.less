@@ -1,6 +1,6 @@
 @import "_variables.less";
 @import "_mixins.less";
-@import "_skills.less";
+@import "_animations.less";
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,800,300);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,400italic);
@@ -11,7 +11,7 @@ body {
 	overflow-x: hidden;
 }
 
-sup { margin-top: -.3em; font-size: .8em; }
+sup { top: -1em; font-size: .5em; }
 
 p {
 	font-family: @font-family-2;
@@ -233,10 +233,13 @@ section {
 }
 
 section#about {
-	background: @wood-light fixed;
-	color: @text-dark;
-	.current { margin-bottom: 10%; }
-	.content { margin-top: 5%; }
+	background: @brand-orange;
+	color: #fff;
+	h3 { color: #fff; }
+	.current { margin-bottom: 10%; text-align: right; }
+	.who {
+		text-align: left;
+	}
 }
 
 section#contact {
@@ -264,6 +267,7 @@ section#contact {
         .portfolio-link {
             display: block;
             position: relative;
+            z-index: 10;
             margin: 1em auto;
             max-width: 300px;
             max-height: 300px;
@@ -275,39 +279,34 @@ section#contact {
             overflow: hidden;
 
             img { width: 100%; max-width: 300px; opacity: 0; }
-            &:hover .caption {
-                opacity: 1;
-                // .translate(0, 0);
-                -webkit-animation-name: bounceInUp;
-  				animation-name: bounceInUp;
-  				  -webkit-animation-duration: .6s;
-				  animation-duration: .6s;
-				  -webkit-animation-fill-mode: both;
-				  animation-fill-mode: both;
+
+			&:hover img{
+               opacity: 1;
+               //  .translate(0, 0);
+               &:extend(.animated);
+               &:extend(.rotateUpOutLeft);
             }
+
             .caption {
                 background: @wood-dark;
-                // &:extend(.white-gradient);
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                opacity: 0;
                 border-radius: 50%;
-                //.translate(0, 100%);
+                // z-index: -10;
+                // opacity: 0;
+                // .translate(0, 100%);
                 // .transition();
-
-                
 
                 .caption-content {
                     position: absolute;
                     top: 45%;
                     width: 100%;
-                    text-align: center;
-                    font-size: 1em;
+                    text-align: center;                   
                     color: #fff;
                     h2 {
                     	color: #fff;
-                    	font-size: 2em;
+                    	font-size: 1.5em;
                     	font-weight: 300;
                     }
                     
