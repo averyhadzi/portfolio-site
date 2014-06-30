@@ -1,0 +1,21 @@
+section#about {
+	background: @brand-orange;
+	color: #fff;
+	h2, h3, p a { color: fade(#fff, 70%); }
+	.star-light { border-color: #fff; }
+	.btn-social { margin: 0 .25em; }
+	.progress {
+		height: 2em;
+		background: @wood-dark;
+		&:extend(.cutout);
+
+		.progress-bar {
+			font-size: 1.5em;
+			line-height: 1.3em;
+			background-color: #fff;
+			color: @brand-orange;
+			text-align: left;
+			padding-left: 1em;
+		}
+	}
+}
