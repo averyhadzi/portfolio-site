@@ -1,21 +1,39 @@
 section#about {
 	background: @brand-orange;
 	color: #fff;
-	h2, h3, p a { color: fade(#fff, 70%); }
-	.star-light { border-color: #fff; }
-	.btn-social { margin: 0 .25em; }
+	h3, p a { color: fade(#fff, 80%); }
+	.star-light { border-color: transparent; }
+	.btn-social { margin: 0 .25em 0 0; }
+	.who, .current { margin-bottom: 2em; border-left: 10px double fade(#fff, 20%); }
+	.skills { margin: 2em 0; }
 	.progress {
 		height: 2em;
 		background: @wood-dark;
 		&:extend(.cutout);
 
 		.progress-bar {
-			font-size: 1.5em;
-			line-height: 1.3em;
+			font-size: 1em;
+			line-height: 2em;
+			font-weight: 700;
 			background-color: #fff;
-			color: @brand-orange;
+			// color: #999;
 			text-align: left;
-			padding-left: 1em;
+			padding: 0 1em;
+			.skill {
+				color: @gray;
+			}
+			.percent {
+				display: inline-block;
+				text-align: right;
+				float: right;
+				color: #808080;
+				.transition();
+			}
+			&:hover {
+				.percent {
+					color: @brand-orange;
+				}
+			}
 		}
 	}
 }
